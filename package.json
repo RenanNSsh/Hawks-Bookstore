@@ -1,0 +1,23 @@
+{
+  "name": "cursonode",
+  "version": "1.0.0",
+  "description": "Hawks Library",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Link-Hawks/Hawks-Library.git"
+  },
+  "author": "Link Hawks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Link-Hawks/Hawks-Library/issues"
+  },
+  "homepage": "https://github.com/Link-Hawks/Hawks-Library#readme",
+  "dependencies": {
+    "express": "4.16.3"
+  }
+}
