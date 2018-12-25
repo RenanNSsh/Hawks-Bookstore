@@ -1,35 +1,32 @@
-const http = require("http");
+const app = require('./src/config/custom-express');
 
-const servidor = http.createServer(function(req,resp){
-    let pagina = "";
-    if(req.url == '/'){
-        pagina = `
-            <html>
-                <head>
-                    <title>Hawks Library</title>
-                    <meta charset="utf-8">
-                </head>
-                <body>
-                    <h1>Hawks Library</h1>
-                </body>
-            </html>
-        `;
-    }else if (req.url == "/livros"){
-        pagina =  `
-        <html>
-            <head>
-                <title>Hawks Livros</title>
-                <meta charset="utf-8">
-            </head>
-            <body>
-                <h1>Listagem de Livros</h1>
-            </body>
-        </html>
-    `;
-    }
+app.listen(3000, function() {
+    console.log(`Servidor rodando na porta 3000`);
+})
 
 
-    resp.end(pagina); 
-});
+// const http = require("http");
 
-servidor.listen(3000)
+
+// const servidor = express.createServer(function(req,resp){
+//     let pagina = "";
+//     if(req.url == '/'){
+//     }else if (req.url == "/livros"){
+//         pagina =  `
+//         <html>
+//             <head>
+//                 <title>Hawks Livros</title>
+//                 <meta charset="utf-8">
+//             </head>
+//             <body>
+//                 <h1>Listagem de Livros</h1>
+//             </body>
+//         </html>
+//     `;
+//     }
+
+
+//     resp.end(pagina); 
+// });
+
+// servidor.listen(3000)
