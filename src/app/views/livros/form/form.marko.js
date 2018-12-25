@@ -19,7 +19,7 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<h1>Cadastro de Livros</h1><form action=\"/livros\" method=\"post\"><input type=\"hidden\" id=\"id\" name=\"id\"><div><label for=\"titulo\">Titulo:</label><input type=\"text\" name=\"titulo\" id=\"titulo\" placeholder=\"Titulo do livro\"></div><div><label for=\"preco\">Preço:</label><input type=\"text\" id=\"preco\" name=\"preco\"></div><div><label for=\"descricao\">Descrição</label><textarea cols=\"20\" rows=\"10\" id=\"descricao\" name=\"descricao\"></textarea></div><button type=\"submit\">Salvar</button></form>");
+  out.w("<h1>Cadastro de Livros</h1><form action=\"/livros\" method=\"post\"><input type=\"hidden\" id=\"id\" name=\"id\"><div><label for=\"titulo\">Titulo:</label><input type=\"text\" name=\"titulo\" id=\"titulo\" placeholder=\"Titulo do livro\"></div><div><label for=\"url\">URL:</label><input type=\"text\" id=\"url\" name=\"url\"></div><div><label for=\"descricao\">Descrição</label><textarea cols=\"20\" rows=\"10\" id=\"descricao\" name=\"descricao\"></textarea></div><button type=\"submit\">Salvar</button></form>");
 
   init_components_tag({}, out);
 
