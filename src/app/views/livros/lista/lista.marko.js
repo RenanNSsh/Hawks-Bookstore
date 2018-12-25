@@ -21,17 +21,19 @@ function render(input, out, __component, component, state) {
 
   component_globals_tag({}, out);
 
-  out.w("<h1>Página de livros</h1><table><tr><td>ID</td><td>Título</td></tr>");
+  out.w("<h1>Página de livros</h1><table><tr><td>ID</td><td>Título</td><td>Descrição</td></tr>");
 
-  var for__10 = 0;
+  var for__11 = 0;
 
   marko_forEach(data.livros, function(livro) {
-    var keyscope__11 = "[" + ((for__10++) + "]");
+    var keyscope__12 = "[" + ((for__11++) + "]");
 
     out.w("<tr><td>" +
       marko_escapeXml(livro.id) +
       "</td><td>" +
       marko_escapeXml(livro.titulo) +
+      "</td><td>" +
+      marko_escapeXml(livro.descricao) +
       "</td></tr>");
   });
 
@@ -39,7 +41,7 @@ function render(input, out, __component, component, state) {
 
   init_components_tag({}, out);
 
-  await_reorderer_tag({}, out, __component, "15");
+  await_reorderer_tag({}, out, __component, "17");
 
   out.w("</body></html>");
 }
