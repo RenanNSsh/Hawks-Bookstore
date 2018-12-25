@@ -8,6 +8,7 @@ module.exports = (app) => {
                 </head>
                 <body>
                     <h1>Hawks Library</h1>
+                    <h2>Sua livraria favorita</h2>
                 </body>
             </html>
         `);
