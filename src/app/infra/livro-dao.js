@@ -4,7 +4,7 @@ class LivroDao{
         this._db = db;
     }
 
-    lista(callack){
+    lista(){
         return new Promise((resolve,reject)=>{
             this._db.all(
                 'SELECT * FROM livros',
@@ -15,6 +15,10 @@ class LivroDao{
                 }
             );
         })
+    }
+
+    adiciona(dados){
+        
     }
 }
 
